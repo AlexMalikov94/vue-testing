@@ -2,7 +2,7 @@
 
 Want to get started with unit testing in Vue? Here's pretty much everything you need. We'll cover setting up a test runner, using Vue Test Utilities, mocking and stubbing common dependencies like Vue Router and Axios, and testing Vuex both within components and in isolation. Let's get testing.
 
-## Project setup
+## Installation
 ```
 npm install
 ```
