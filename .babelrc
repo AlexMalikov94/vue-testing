@@ -1,0 +1,22 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "@vue/cli-plugin-babel/preset"
+      ]
+    },
+    "production": {
+      "presets": [
+        "@vue/cli-plugin-babel/preset"
+      ]
+    },
+    "test": {
+      "presets": [
+       ["env", { "targets": { "node": "current"}}]
+      ],
+      "plugins": [
+        "@babel/plugin-proposal-object-rest-spread"
+      ]
+    }
+  }
+}
