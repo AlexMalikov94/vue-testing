@@ -1,21 +1,15 @@
 <template>
   <div>
-     <AppCoursePlayList
-       :course="{
-          parts: [
-            { id: 1,  title: 'One'},
-            { id: 2, title: 'Two'}
-          ]
-        }"
+     <AppCountdown :start="5"
       />
   </div>
 </template>
 <script>
-import AppCoursePlayList from '@/components/features/course/AppCoursePlayList'
+import AppCountdown from '@/components/features/countdown/AppCountdown'
 export default {
   
   components: {
-    AppCoursePlayList
+    AppCountdown
   }
 }
 </script>
