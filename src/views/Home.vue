@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import AppCountdown from '@/components/features/countdown/AppCountdown'
+import AppCountdown from '@/components/elements/countdown/AppCountdown'
 export default {
   
   components: {

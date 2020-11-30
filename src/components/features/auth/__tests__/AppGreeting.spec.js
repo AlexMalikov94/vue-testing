@@ -11,7 +11,7 @@ describe('AppGreeting', () => {
                       user: {
                           first_name: 'Alex'
                       }
-                  }
+                  };
               }
            }
        };

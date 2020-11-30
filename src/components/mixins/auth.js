@@ -5,7 +5,7 @@ export default  {
                 user: {
                     first_name: 'Alex'
                 }
-            }
+            };
         }
     }
-}
+};
