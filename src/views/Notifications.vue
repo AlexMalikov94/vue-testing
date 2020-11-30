@@ -5,6 +5,7 @@
            :key="notification.id"
          >
          {{ notification.body }}
+         <a href="#" @click.prevent="markNotificationRead(notification)">Click me</a>
          </li>
     </ul>
 </template>
@@ -18,7 +19,8 @@ export default {
     },
     methods: {
        ...mapActions({
-          'getNotifications': 'getNotifications'
+          'getNotifications': 'getNotifications',
+          'markNotificationRead': 'markNotificationRead'
        })
     },
     mounted() {

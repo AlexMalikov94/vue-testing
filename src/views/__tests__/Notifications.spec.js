@@ -37,4 +37,34 @@ describe('Notifications', () => {
       expect(items.at(0).text()).toContain('One');
       expect(items.at(1).text()).toContain('Two');
    });
+
+   it('it marks notification as read', () => {
+    let notification = {
+        id: 1,
+        body: 'One',
+        read: false
+    };
+    let markNotificationRead = jest.fn();
+    let store = new Vuex.Store({
+        getters: {
+          notifications: () => [
+              notification
+          ]
+        },
+        actions: {
+          getNotifications: () => [],
+          markNotificationRead
+        }
+    });
+
+    let wrapper = mount(Notifications,{
+        localVue,
+        store
+    });
+
+    wrapper.findAll('a').at(0).trigger('click');
+
+    expect(markNotificationRead.mock.calls[0][1]).toEqual(notification);
+    //expect(markNotificationRead).toBeCalled();
+ });
 });
